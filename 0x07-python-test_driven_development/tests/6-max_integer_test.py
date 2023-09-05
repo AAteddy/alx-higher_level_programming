@@ -21,27 +21,27 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_ordered_list(self):
         """Test an ordered list of integers."""
-        ordered = [1, 2, 3, 4, 5]
-        self.assertEqual(max_integer(ordered), 5)
+        ordered = [1, 2, 3, 4]
+        self.assertEqual(max_integer(ordered), 4)
 
     def test_unordered_list(self):
         """Test an unordered list of integers."""
-        unordered = [1, 3, 5, 2, 4]
-        self.assertEqual(max_integer(unordered), 5)
+        unordered = [1, 3, 4, 2]
+        self.assertEqual(max_integer(unordered), 4)
 
     def test_max_at_beginning(self):
         """Test a list with a beginning max value."""
-        max_at_beginning = [5, 4, 3, 2, 1]
-        self.assertEqual(max_integer(max_at_beginning), 5)
+        max_at_beginning = [4, 3, 2, 1]
+        self.assertEqual(max_integer(max_at_beginning), 4)
 
     def test_float(self):
         """Test a list of floats."""
-        floats = [1.1, 3.91, 7.05, 99.99, 10.24]
+        floats = [1.1, 3.91, 7.05, 99.99]
         self.assertEqual(max_integer(floats), 99.99)
 
     def test_int_float(self):
         """Test a list of ints and floats."""
-        ints_and_floats = [1.99, -10, 7.02, 8, 11.01]
+        ints_and_floats = [1.99, -10, 7.02, 11.01]
         self.assertEqual(max_integer(ints_and_floats), 11.01)
 
     def test_string(self):
