@@ -16,13 +16,13 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_unordered_list(self):
         """Test an unordered list of integers."""
-        unordered = [1, 2, 4, 3]
+        unordered = [1, 4, 2, 3]
         self.assertEqual(max_integer(unordered), 4)
 
     def test_max_at_begginning(self):
         """Test a list with a beginning max value."""
-        max_at_beginning = [4, 3, 2, 1]
-        self.assertEqual(max_integer(max_at_beginning), 4)
+        max_at_beginning = [7, 3, 2, 1]
+        self.assertEqual(max_integer(max_at_beginning), 7)
 
     def test_empty_list(self):
         """Test an empty list."""
@@ -31,8 +31,8 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_one_element_list(self):
         """Test a list with a single element."""
-        one_element = [7]
-        self.assertEqual(max_integer(one_element), 7)
+        one_element = [2]
+        self.assertEqual(max_integer(one_element), 2)
 
     def test_floats(self):
         """Test a list of floats."""
@@ -46,13 +46,13 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_string(self):
         """Test a string."""
-        string = "Brennan"
-        self.assertEqual(max_integer(string), 'r')
+        string = "Teddy"
+        self.assertEqual(max_integer(string), 'y')
 
     def test_list_of_strings(self):
         """Test a list of strings."""
-        strings = ["Brennan", "is", "my", "name"]
-        self.assertEqual(max_integer(strings), "name")
+        strings = ["ted", "matty", "abi", "zed"]
+        self.assertEqual(max_integer(strings), "zed")
 
     def test_empty_string(self):
         """Test an empty string."""
