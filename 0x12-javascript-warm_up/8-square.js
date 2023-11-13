@@ -6,7 +6,7 @@ if (isNaN(sizeSquare)) {
     for (i = 1; i <= sizeSquare; i++) {
         let strRow = '';
         for (j = 1; j <= sizeSquare; j++) {
-            strRow += 'X'
+            strRow += 'X';
         }
         console.log(strRow);
     }
