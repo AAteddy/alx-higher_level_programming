@@ -12,8 +12,7 @@ if __name__ == "__main__":
     c = db.cursor()
     c.execute("SELECT * FROM `states` \
                 WHERE BINARY `name` = '{}' \
-                ORDER BY states.id"
-                .format(sys.argv[4]))
+                ORDER BY states.id".format(sys.argv[4]))
     rows = c.fetchall()
     for row in rows:
         print(row)
