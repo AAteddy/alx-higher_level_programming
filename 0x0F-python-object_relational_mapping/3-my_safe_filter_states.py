@@ -15,6 +15,6 @@ if __name__ == '__main__':
     rows = c.fetchall()
     for row in rows:
         if(sys.argv[4] == row[1]):
-                print(row)
+            print(row)
     c.close()
     db.close()
