@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Hello testing
+Takes in arguments and displays all values in the states table of hbtn_0e_0_usa
+where name matches the argument.
 """
 
 import sys
