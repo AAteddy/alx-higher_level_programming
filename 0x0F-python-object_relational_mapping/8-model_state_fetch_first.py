@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 prints the first State object from the database hbtn_0e_6_usa.
-You are not allowed to fetch all states from the database before displaying the result.
+You are not allowed to fetch all states from the database
+before displaying the result.
 """
 import sys
 from sqlalchemy import create_engine
